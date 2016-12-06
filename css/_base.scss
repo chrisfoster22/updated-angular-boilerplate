@@ -12,15 +12,6 @@ body {
     flex-direction: column;
 }
 
-h1 {
-    margin: .3em 0;
-}
-.main-wrapper {
-
-    width: 100%;
-    max-width: 1280px;
-}
-
 a {
     color: $link_blue;
     text-decoration: none;
@@ -30,32 +21,4 @@ a {
     &:active {
         text-decoration: underline;
     }
-} /*end a*/
-
-
-.centered {
-    display: block;
-    margin: auto;
-    padding-top: 1em;
-}
-
-.inner-wrapper {
-    margin: 10px;
-}
-
-.inner-wrapper-header {
-    max-width: 670px;
-}
-
-.page-copy {
-    padding: 1rem 0 1rem 0;
-    line-height: 1.7rem;
-
-    .login-page & {
-        padding-top: 2em;
-    }
-} /*end page-copy*/
-
-.centered-copy {
-    text-align: center;
-}
+} 

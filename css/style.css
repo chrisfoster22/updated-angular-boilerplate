@@ -1,8 +1,3 @@
-/*****************************************
-
-			General Project Styles
-
-******************************************/
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -9555,23 +9550,6 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
-/*****************************************
-
-            Variables and Mixins
-
-******************************************/
-/* line 7, _modules.scss */
-.header-wrap {
-  padding: 15px;
-}
-
-/* line 19, _modules.scss */
-.nav {
-  border-top: 1px solid #D76B7C;
-  border-bottom: 1px solid #D76B7C;
-  height: 40px;
-}
-
 /* line 1, _base.scss */
 body {
   font-family: Helvetica, Arial, sans-serif;
@@ -9587,60 +9565,15 @@ body {
 }
 
 /* line 15, _base.scss */
-h1 {
-  margin: .3em 0;
-}
-
-/* line 18, _base.scss */
-.main-wrapper {
-  width: 100%;
-  max-width: 1280px;
-}
-
-/* line 24, _base.scss */
 a {
   color: #008BC1;
   text-decoration: none;
 }
-/* line 27, _base.scss */
+/* line 18, _base.scss */
 a:hover {
   text-decoration: underline;
 }
-/* line 30, _base.scss */
+/* line 21, _base.scss */
 a:active {
   text-decoration: underline;
-}
-
-/*end a*/
-/* line 36, _base.scss */
-.centered {
-  display: block;
-  margin: auto;
-  padding-top: 1em;
-}
-
-/* line 42, _base.scss */
-.inner-wrapper {
-  margin: 10px;
-}
-
-/* line 46, _base.scss */
-.inner-wrapper-header {
-  max-width: 670px;
-}
-
-/* line 50, _base.scss */
-.page-copy {
-  padding: 1rem 0 1rem 0;
-  line-height: 1.7rem;
-}
-/* line 54, _base.scss */
-.login-page .page-copy {
-  padding-top: 2em;
-}
-
-/*end page-copy*/
-/* line 59, _base.scss */
-.centered-copy {
-  text-align: center;
 }

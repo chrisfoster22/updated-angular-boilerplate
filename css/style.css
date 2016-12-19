@@ -9554,26 +9554,10 @@ button.close {
 body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1rem;
-  background-color: #fafafa;
-  color: #444444;
   /*sticky footer*/
   display: -webkit-flex;
   display: flex;
   min-height: 100vh;
   -webkit-flex-direction: column;
   flex-direction: column;
-}
-
-/* line 15, _base.scss */
-a {
-  color: #008BC1;
-  text-decoration: none;
-}
-/* line 18, _base.scss */
-a:hover {
-  text-decoration: underline;
-}
-/* line 21, _base.scss */
-a:active {
-  text-decoration: underline;
 }

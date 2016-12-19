@@ -1,8 +1,6 @@
 body {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 1rem;
-    background-color: #fafafa;
-    color: $readable-grey;
 
     /*sticky footer*/
     display: -webkit-flex;
@@ -11,14 +9,3 @@ body {
     -webkit-flex-direction: column;
     flex-direction: column;
 }
-
-a {
-    color: $link_blue;
-    text-decoration: none;
-    &:hover {
-        text-decoration: underline;
-    }
-    &:active {
-        text-decoration: underline;
-    }
-} 

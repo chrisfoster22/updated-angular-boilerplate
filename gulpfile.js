@@ -3,7 +3,6 @@
 	concat = require('gulp-concat'),
 	compass = require('gulp-compass'),
 	connect = require('gulp-connect');
-
 	
 
 // All Sass files here.
@@ -29,7 +28,7 @@ gulp.task('js', function(){
 });
 
 
-// Compass is a framework with built-in mixins. Using connect.reload() on the last line to signal the server when a change is made here.
+// Compass is a sass framework with built-in mixins. Using connect.reload() on the last line to signal the server when a change is made here.
 gulp.task('compass', function(){
 	gulp.src(sassSources)
 		.pipe(compass({
@@ -43,27 +42,28 @@ gulp.task('compass', function(){
 		.pipe(connect.reload())
 });
 
-// What to watch constantly. compass files can't use sassSource var because that file 
-// doesn't change. Have to actually watch *.scss
+
 gulp.task('watch', function() {
 	gulp.watch(jsSources, ['js']),
-	gulp.watch('sass/*.scss', ['compass']),
+	gulp.watch('sass/**.scss', ['compass']),
 	gulp.watch(htmlSources, ['html'])
 });
 
-// Starts server. Sets root of server to root directory (you can change this). 
-// Defaults to localhost:8080. You can specify port if needed.
+
+// Gulp Connect is a node module that allows you to start the server and includes a livereload option.
 gulp.task('connect', function() {
 	connect.server({
 		livereload: true
 	});
 });
 
-// Make sure livereload is watching html files
+
+// Ensure livereload is watching html files.
 gulp.task('html', function(){
 	gulp.src(htmlSources)
 		.pipe(connect.reload())
 });
+
 
 gulp.task('default', ['html', 'js', 'compass', 'connect', 'watch'])
 

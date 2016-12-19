@@ -1,4 +1,4 @@
-@import "bootstrap",
-		"variables",
-		"mixins",
-		"base"
+@import "base/module",
+		"layout/module",
+		"components/module",
+		"pages/module"
